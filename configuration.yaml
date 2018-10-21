@@ -30,7 +30,7 @@ map:
 sun:
 
 sensor:
-  - platform: yr
+  - platform: !secret sensor.platform
 
 auth:
 
