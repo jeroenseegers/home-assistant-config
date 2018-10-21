@@ -38,6 +38,10 @@ http:
   api_password: !secret http.api_password
   trusted_networks: !secret http.trusted_networks
 
+zwave:
+  usb_path: !secret zwave.usb_path
+  network_key: !secret zwave.network_key
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
