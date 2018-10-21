@@ -21,8 +21,6 @@ updater:
 
 discovery:
 
-conversation:
-
 history:
 
 logbook:
@@ -33,9 +31,6 @@ sun:
 
 sensor:
   - platform: yr
-
-tts:
-  - platform: google
 
 auth:
 
