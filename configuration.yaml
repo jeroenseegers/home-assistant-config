@@ -14,6 +14,11 @@ homeassistant:
   time_zone: UTC
   # Customization file
   customize: !include customize.yaml
+  # Enabled authentication types
+  auth_providers:
+    - type: homeassistant
+    - type: trusted_networks
+    - type: legacy_api_password
 
 # Show links to resources in log and frontend
 introduction:
@@ -62,6 +67,13 @@ sensor:
 # Text to speech
 tts:
   - platform: google
+
+# Enables authentication methods
+auth:
+
+http:
+  api_password: !secret http.api_password
+  trusted_networks: !secret http.trusted_networks
 
 # Cloud
 cloud:
