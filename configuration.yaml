@@ -13,8 +13,6 @@ homeassistant:
     - type: trusted_networks
     - type: legacy_api_password
 
-introduction:
-
 frontend:
 
 config:
