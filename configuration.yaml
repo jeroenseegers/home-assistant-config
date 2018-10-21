@@ -38,8 +38,6 @@ http:
   api_password: !secret http.api_password
   trusted_networks: !secret http.trusted_networks
 
-cloud:
-
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
